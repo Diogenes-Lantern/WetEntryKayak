@@ -47,5 +47,15 @@ namespace WetEntryKayak.DatabaseAccess
                 connection.Execute(targetSProc, parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
         }
+
+        internal void Delete<T>(T target)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string targetSProc = SProcFactory.RetrieveDeleteSProcName<T>();
+                object parameters = ConvertToDataTable(target);
+                connection.Execute(targetSProc, parameters, commandType: System.Data.CommandType.StoredProcedure);
+            }
+        }
     }
 }

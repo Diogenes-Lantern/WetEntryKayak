@@ -40,5 +40,17 @@ namespace DataAccess.Factories
             }
             return sProc;
         }
+
+        internal static string RetrieveDeleteSProcName<T>()
+        {
+            string sProc;
+            switch (typeof(T))
+            {
+                default:
+                    sProc = SProcNames.CreateCustomerSProcName;
+                    break;
+            }
+            return sProc;
+        }
     }
 }
