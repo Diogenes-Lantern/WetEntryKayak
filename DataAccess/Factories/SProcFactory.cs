@@ -1,4 +1,5 @@
 ﻿using DataAccess.Constants;
+using System;
 
 namespace DataAccess.Factories
 {
@@ -17,6 +18,18 @@ namespace DataAccess.Factories
         }
 
         internal static string RetrieveRetrievalSProcName<T>()
+        {
+            string sProc;
+            switch (typeof(T))
+            {
+                default:
+                    sProc = SProcNames.CreateCustomerSProcName;
+                    break;
+            }
+            return sProc;
+        }
+
+        internal static string RetrieveUpdateSProcName<T>()
         {
             string sProc;
             switch (typeof(T))

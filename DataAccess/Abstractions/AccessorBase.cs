@@ -37,5 +37,15 @@ namespace WetEntryKayak.DatabaseAccess
             }
             return result;
         }
+
+        internal void Update<T>(T target)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string targetSProc = SProcFactory.RetrieveUpdateSProcName<T>();
+                object parameters = ConvertToDataTable(target);
+                connection.Execute(targetSProc, parameters, commandType: System.Data.CommandType.StoredProcedure);
+            }
+        }
     }
 }
