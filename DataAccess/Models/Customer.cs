@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    class Customer
+   internal class Customer
     {
         public int CustomerID { get; set; }
         public string LastName { get; set; }
@@ -17,7 +17,7 @@ namespace DataAccess.Models
         public string PostalCode { get; set; }
         public string EMailAdress { get; set; }
         public string PhoneNumber { get; set; }
-        public string FAX { get; set; }
+        public string Fax { get; set; }
         public string Country { get; set; }
     }
 }

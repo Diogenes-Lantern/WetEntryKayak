@@ -10,10 +10,10 @@ namespace DataAccess.Models
     {
         public int KayakID { get; set; }
         public string KayakType { get; set; }
-        public String KayakColor { get; set; }
+        public string KayakColor { get; set; }
         public string KayakName { get; set; }
         public int KayakWeight { get; set; }
-        public blob KayakPicture { get; set; }
+        public string KayakPicture { get; set; }
         public int KayakCap { get; set; }
         public int KayakLength { get; set; }
         public int KayakDiscr { get; set; }
