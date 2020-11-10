@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-     internal class USERID_Password
+     internal class User
     {
         public int UserID { get; set; }
         public int CustomerID { get; set; }
