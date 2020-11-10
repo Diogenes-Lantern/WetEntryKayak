@@ -47,6 +47,13 @@
     <Compile Include="Abstractions\AccessorBase.cs" />
     <Compile Include="Constants\SProcNames.cs" />
     <Compile Include="Factories\SProcFactory.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Kayak INV.cs" />
+    <Compile Include="Models\Kayak.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetales.cs" />
+    <Compile Include="Models\USERID_Password.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Factories\SqlConnectionStringFactory.cs" />
   </ItemGroup>
