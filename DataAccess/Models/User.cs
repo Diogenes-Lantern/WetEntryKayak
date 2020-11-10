@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccess.Models
+﻿namespace DataAccess.Models
 {
-     internal class User
+    internal class User
     {
         public int UserID { get; set; }
         public int CustomerID { get; set; }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccess.Models
+﻿namespace DataAccess.Models
 {
-     internal class OrderDetales
+    internal class OrderDetales
     {
         public int DetailID { get; set; }
         public int KayakID { get; set; }

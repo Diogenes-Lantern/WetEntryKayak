@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-     internal class Order
+    internal class Order
     {
         public int OrderID { get; set; }
         public int CustomerID { get; set; }
