@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Kayak.cs" />
+    <Compile Include="Models\OrderContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFrontEndControlers\CartController.cs">
+      <Generator>CartContriller</Generator>
+    </Compile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
